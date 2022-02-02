@@ -1,0 +1,111 @@
+body{
+  background: url(assets/bg.jpeg) center/cover no-repeat;
+  width: 100%;
+  margin: 0%;
+}
+/*
+*{
+  border: 1px solid red;
+} 
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Pinyon+Script & display=swap');
+/******* en-tête *****/ 
+
+header{
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  background: #0c0c0b9a;
+  backdrop-filter: blur(2px);
+  box-shadow: inset -6px 4px 7px 1px #bd956133 ;
+}
+h1{
+  padding: 5px;
+  margin: 0;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  font-family : 'Pinyon Script', cursive ;
+  text-shadow: -3px 3px 2px #3838385e;
+
+}
+.img{
+  display: flex;
+  align-items: flex-end;
+}
+nav{
+  display: flex;
+  align-items: flex-end;
+  width: 50%;
+}
+  
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  list-style-type: none;
+  padding: 0;
+  margin: 10px;
+
+}
+nav ul a{
+  color: white;
+  text-decoration: none;
+  opacity: 0,9;
+  font-size: 0,85rem;
+  padding: 10px;
+  margin-left: 20px;
+}
+a:hover{
+  color: antiquewhite;
+  text-decoration: underline;
+  opacity: 1;
+}
+
+/****** Corps de page ******/ 
+
+main{
+  background: #0c0c0b9a;
+  margin: 100px 50px;
+  width: 85%;
+  min-height: 700px;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+article{
+  display: grid;
+  grid-template-columns: 50% 5% 45%;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+  'block1 . block3'
+  'block2 block2 block2'
+  'block2 block2 block2';
+}
+.block1{
+  grid-area: block1;
+  margin: 10px;
+  padding: 5px;
+  text-align: justify;
+  font-family: 'Balsamiq', sans-serif;
+  color: rgb(255, 255, 255);
+}
+.block2{
+  grid-area: block2;
+  margin: 10px;
+  padding: 5px;
+  color: white;
+  
+}
+.block3{
+  grid-area: block3;
+  margin: 10px;
+  padding: 5px;
+  color: white;
+}
