@@ -1,0 +1,70 @@
+
+header{
+  display: flex;
+  flex-direction: column;
+}
+
+h1{
+  display: none;
+  position: relative;
+}
+
+.logo{
+  display: flex;
+  justify-content: center;
+}
+
+
+.nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav ul li a{
+  font-size: 1rem;
+  text-align: justify;
+}
+
+/******** corps de page ****/
+main{
+  width: 100%;
+  margin: 10px auto;
+}
+
+section{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: 
+  'aside aside aside'
+  'block-3 block-3 block-3'
+  'block-2 block-2 block-2';
+  width: 100%;
+  margin: 0;
+}
+
+aside{
+  grid-area: aside;
+}
+
+.block-2{
+  grid-area: block-2;
+}
+
+.block-3{
+  grid-area: block-3;
+}
+
+.block-2 .pictures{
+  display: flex;
+  flex-direction: column;
+}
+
+.block-2 .pictures > a{
+  display: flex;
+  justify-content: center;
+}
+
+.block-2 .pictures img{
+  width: auto;
+}
