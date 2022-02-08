@@ -2,16 +2,20 @@
 @import url('https://fonts.googleapis.com/css2? family= Roboto & display=swap');
 @import url('https://fonts.googleapis.com/css2? family= Pinyon+Script & display=swap');
 
-body{
+body {
   background: url(assets/bg.jpeg) center/cover no-repeat;
   width: 100%;
   margin: 0%;
 }
 
+p {
+  margin: 10px;
+}
+
 
 /******* en-tête *****/ 
 
-header{
+header {
   color: white;
   display: flex;
   justify-content: space-between;
@@ -21,7 +25,7 @@ header{
   box-shadow: inset -6px 4px 7px 1px #bd956112 ;
 }
 
-h1{
+h1 {
   padding: 5px;
   margin: 0;
   position: absolute;
@@ -33,27 +37,28 @@ h1{
 
 }
 
-.logo{
+.logo {
   display: flex;
   align-items: flex-end;
 }
 
-nav{
+.nav {
   display: flex;
+  justify-content: flex-end;
   align-items: flex-end;
-  width: 50%;
+  width: 100%;
 }
   
 nav ul {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   width: 100%;
   list-style-type: none;
   padding: 0;
   margin: 0 100px 0 1px;
 }
 
-nav ul a{
+nav ul a {
   color: white;
   font-family: 'roboto', sans-serif;
   text-decoration: none;
@@ -62,7 +67,7 @@ nav ul a{
   margin: 10px;
 }
 
-a:hover{
+nav ul a:hover {
   color: antiquewhite;
   text-decoration: underline;
   opacity: 1;
@@ -70,7 +75,7 @@ a:hover{
 
 /****** Corps de page ******/ 
 
-main{
+main {
   margin: 100px auto;
   width: 85%;
   min-height: 700px;
@@ -78,20 +83,20 @@ main{
   
 }
 
-section{
+section {
   display: grid;
   grid-template-columns: 35% 5% 60%;
-  grid-template-rows: 1fr 1fr ;
+  grid-template-rows: auto auto ;
   grid-template-areas:
   'block1 . block3'
   'block2 block2 block2';
   position: relative;
 }
 
-aside, 
+.block-1,
 .block-2,
-.block-3{
-  background: #ecbb7b50;
+.block-3 {
+  background: #7c6341dc;;
   padding: 15px;
   margin: 10px;
   color: white;
@@ -103,7 +108,7 @@ aside,
   backdrop-filter: blur(3px);
 }
 
-aside{
+.block-1 {
   grid-area: block1;
   display: flex;
   flex-direction: column;
@@ -111,27 +116,29 @@ aside{
   align-items: center;
 }
 
-aside h2{
+h2 {
   text-align: center;
-  text-decoration: solid underline rgb(0, 0, 0);
+  text-decoration: 1px solid underline rgba(0, 0, 0, 0.199);
 }
 
-.img-group img{
+.img-group img {
   border-radius: 5px;
   box-shadow: 2px 2px 2px #bd956133;
   border: 1px solid #bd9561b2;
+  width: 90%;
+  margin: 10px;
 }
 
-.social-network{
+.social-network {
   display: flex;
 }
 
-.social-network a{
+.social-network a {
   margin-left: 10px;
   padding: 0;
 }
 
-.social-network a:hover{
+.social-network a:hover {
   padding-bottom: 5px;
   animation: myAnim 1s ease 0s 1 normal forwards;
 }
@@ -147,34 +154,31 @@ aside h2{
   }
 }
 
-.block-2{
+.block-2 {
   grid-area: block2;
-  padding-bottom: 0;
   
 }
 
-.block-2 h2{
-  margin: 10px 0 0 10px;
-}
-
-.pictures{
+.pictures {
   display: flex;
   justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
-.block-2 img{
-  width: 300px;
-  height: 350px;
-  margin: 10px;
-  transform: width heigth 1s ease;
+.block-2 img {
+  width: 95%;
+  height: 300px;
+  margin: 5px;
+  transition: width 300ms ease;
 }
 
-.block-2 img:hover{
-  width: 380px;
-  height: 400px;
+.block-2 img:hover {
+  width: 100%;
 }
 
-.block-3{
+
+.block-3 {
   grid-area: block3;
   display: flex;
   flex-direction: column;
@@ -183,7 +187,7 @@ aside h2{
   flex-wrap: nowrap;
 }
 
-.block-3 iframe{
+.block-3 iframe {
   width: 85%;
   max-width: 400px;
   min-height: 300px;
@@ -193,7 +197,7 @@ aside h2{
 
 /********** pied de page ********/
 
-footer{
+footer {
   padding:40px 0;
   background: #0c0c0b9a;
   backdrop-filter: blur(2px);
@@ -222,7 +226,9 @@ footer ul a {
 }
 
 footer ul a:hover {
-  opacity:1;
+  color: antiquewhite;
+  text-decoration: underline;
+  opacity: 1;
 }
 
 footer .copyright {
