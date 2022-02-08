@@ -36,35 +36,35 @@ section{
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto auto auto;
   grid-template-areas: 
-  'aside aside aside'
+  'block-1 block-1 block-1'
   'block-3 block-3 block-3'
   'block-2 block-2 block-2';
   width: 100%;
   margin: 0;
 }
 
-aside{
-  grid-area: aside;
+.block-1 {
+  grid-area: block-1;
 }
 
-.block-2{
+.block-2 {
   grid-area: block-2;
 }
 
-.block-3{
+.block-3 {
   grid-area: block-3;
 }
 
-.block-2 .pictures{
+.block-2 .pictures {
   display: flex;
   flex-direction: column;
 }
 
-.block-2 .pictures > a{
+.block-2 .pictures > a {
   display: flex;
   justify-content: center;
 }
 
-.block-2 .pictures img{
+.block-2 .pictures img {
   width: auto;
 }

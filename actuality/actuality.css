@@ -2,8 +2,9 @@
   display: flex;
   flex-direction: column;
 }
+
 .boxe,
-.futsal{
+.futsal {
   background: #7c6341dc;
   padding: 15px;
   margin: 10px;
@@ -15,34 +16,33 @@
   border-radius: 15px;
   backdrop-filter: blur(3px);
 }
-p {
-  margin: 10px;
-}
-.texte-img-boxe{
+
+.texte-img-boxe {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.img-actuality-boxe{
+
+.img-actuality-boxe {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
 
-.img-actuality-boxe a{
+.img-actuality-boxe a {
   color:inherit;
   text-decoration:none;
   opacity:0.8;
 }
 
-.img-actuality-boxe a:hover{
+.img-actuality-boxe a:hover {
   color: antiquewhite;
   text-decoration: underline;
   opacity: 1;
 
 }
 
-.img-actuality-boxe img{
+.img-actuality-boxe img {
   height: 300px;
 }
