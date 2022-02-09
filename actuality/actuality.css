@@ -1,4 +1,4 @@
-.section-planning{
+.section-actuality{
   display: flex;
   flex-direction: column;
 }
@@ -17,7 +17,7 @@
   backdrop-filter: blur(3px);
 }
 
-.texte-img-boxe {
+.text-img-boxe {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -30,7 +30,7 @@
   flex-direction: column;
 }
 
-.img-actuality-boxe a {
+.img-actuality-boxe-link a {
   color:inherit;
   text-decoration:none;
   opacity:0.8;
